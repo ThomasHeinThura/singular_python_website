@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section id="about-me">
+        <h2>About Me</h2>
+        <img src="{{ url_for('static', filename='my_photo.jpg') }}" alt="My Photo">
+        <p>Some introduction text about yourself.</p>
+        <a href="https://www.facebook.com"><button>Facebook</button></a>
+        <a href="https://www.twitter.com"><button>Twitter</button></a>
+    </section>
+
+    <section id="articles">
+        <h2>Articles</h2>
+        <ul>
+            <li><a href="https://medium.com/article1">Article 1</a></li>
+            <li><a href="https://medium.com/article2">Article 2</a></li>
+            <li><a href="https://medium.com/article3">Article 3</a></li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <a href="https://github.com/project1">Project 1</a><br>
+        <a href="https://github.com/project2">Project 2</a><br>
+        <a href="https://github.com/project3">Project 3</a><br>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <a href="https://project1">Project 1</a><br>
+        <a href="https://project2">Project 2</a><br>
+        <a href="https://project3">Project 3</a><br>
+    </section>
+
+    <section id="charity">
+        <h2>Charity</h2>
+        <a href="https://presentation1">Presentation 1</a><br>
+        <p>Introduction to charity work.</p>
+    </section>
+{% endblock %}

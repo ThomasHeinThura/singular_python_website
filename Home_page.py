@@ -22,6 +22,8 @@ with st.container():
     - blah blah blah
     - blu blu blu
     - blal blal blal 
+    - la la la 
+    - Oh la la 
     """
     )
     # Need to add contact section and all the link I have.
@@ -70,6 +72,31 @@ with st.container():
     st.subheader("The projects I write : ")
     st.write("##")
 
+    column_one, column_two, column_three, column_four, column_five = st.columns(5)
+    with column_one:
+        st.markdown(
+            "[Personal website project](https://github.com/ThomasHeinThura/singular_python_website)"
+        )
+        st.image("assests/personal_website.jpg")
+
+    with column_two:
+        st.markdown(
+            "[ETL pipeline and CI CD project](https://github.com/ThomasHeinThura/Testing-automation-ETL-pipeline-and-CI-CD-with-docker/)"
+        )
+        st.image("assests/ci_cd.jpg")
+
+        pass
+
+    with column_three:
+        st.write("column_three")
+        pass
+
+    with column_four:
+        st.write("column four")
+        pass
+
+    with column_five:
+        st.write("column five")
 # ----- Education Section ----- #
 with st.container():
     st.write("---")

@@ -18,6 +18,14 @@ with st.container():
     st.write("I am passionate about finding ways to use Python")
     st.write("[Learn More in github >](https://github.com/ThomasHeinThura?tab=repositories)")
     st.markdown("### This is the test.")
+    st.write(
+    """
+    I am the freelance machine learning engineer from myanmar that do blah blah blah
+    - blah blah blah
+    - blu blu blu
+    - blal blal blal 
+    """
+    )
     ### Need to add contact section and all the link I have. And Introduction from others.
     ### add lottie file for animation 
     
@@ -27,14 +35,9 @@ with st.container():
     st.subheader("The articles I write : ")
     st.write("##")
     
-    st.write(
-    """
-    I am the freelance machine learning engineer from myanmar that do blah blah blah
-    - blah blah blah
-    - blu blu blu
-    - blal blal blal 
-    """
-    )
+    st.write("The articles are :")
+    
+
 
 # ----- Projects Section ----- #
 with st.container():

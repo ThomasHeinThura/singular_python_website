@@ -5,10 +5,6 @@ from transformers import pipeline
 st.cache_data.clear()
 st.title("Text Summerization")
 
-text_input = st.text_area("Input text to summarization.", height = 400)
-submit = st.button("Submit")
-
-
 # to do 
 # you have to make cache to reduce to model memory usage. 
 
@@ -25,6 +21,10 @@ submit = st.button("Submit")
 #     return result[0]["summary_text"]
 
 # ----------------------------------------------------- #
+
+text_input = st.text_area("Input text to summarization.", height = 200)
+submit = st.button("Submit")
+
 if submit:
     with st.spinner('Summarization the text...'):
         # output =  evaluate(text_input) # final result from process
@@ -33,7 +33,6 @@ if submit:
         st.text_area(
             label = "Text Summarization Output",
             value = output,
-            height = 350
-                    )
+            height = 150)
 
 ### have to watch streamlit nv bar

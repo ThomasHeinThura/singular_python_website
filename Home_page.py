@@ -6,8 +6,47 @@ st.set_page_config(
     layout = "wide"
 )
 
-st.title("Main Page")
+
 st.sidebar.success("select the pages")
 
-# ----- HEADER SECTION ----- # 
-st.subheader("Hello there, I am Thomas Hein Thura :wave:")
+# ----- Intro SECTION ----- # 
+with st.container():
+    st.subheader("Hello there, I am Thomas Hein Thura :wave:")
+    st.title("A Freelance Machine Learning Engineer from Myanmar.")
+    st.write("I am passionate about finding ways to use Python")
+    st.write("[Learn More in github >](https://github.com/ThomasHeinThura?tab=repositories)")
+    st.markdown("### This is the test.")
+    ### Need to add contact section and all the link I have. And Introduction from others.
+    ### add lottie file for animation 
+    
+# ------ Article Section ----- #
+with st.container():
+    st.write("---")
+    st.subheader("The articles I write : ")
+    st.write("##")
+    st.write(
+    """
+    I am the freelance machine learning engineer from myanmar that do blah blah blah
+    - blah blah blah
+    - blu blu blu
+    - blal blal blal 
+    """
+    )
+
+# ----- Projects Section ----- #
+with st.container():
+    st.write("---")
+    st.subheader("The projects I write : ")
+    st.write("##")
+
+# ----- Education Section ----- # 
+with st.container():
+    st.write("---")
+    st.subheader("The projects I involved during University.")
+    st.write("##")
+
+# ------ Charity Section ------ # 
+with st.container():
+    st.write("---")
+    st.subheader("The local charity group I found during University days.")
+    st.write("##")

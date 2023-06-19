@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.cache_data.clear()
+
 st.set_page_config(
     page_title = "Multipage App",
     page_icon = ":tada:",
@@ -24,6 +26,7 @@ with st.container():
     st.write("---")
     st.subheader("The articles I write : ")
     st.write("##")
+    
     st.write(
     """
     I am the freelance machine learning engineer from myanmar that do blah blah blah

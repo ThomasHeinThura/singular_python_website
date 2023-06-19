@@ -44,18 +44,18 @@ with st.container():
         #     [![A mushroom-head robot](/assets/images/codey.jpg 'Codey the Codecademy mascot')](https://codecademy.com)"
         
         # )
-        st.markdown("[![Foo](assests/ci_cd.jpg)](http://google.com.au/)")
+        st.markdown("[![Foo](https://github.com/ThomasHeinThura/singular_python_website/blob/main/assests/ci_cd.jpg?raw=true)](https://github.com/ThomasHeinThura/Testing-automation-ETL-pipeline-and-CI-CD-with-docker)")
         pass
     
     with column_two:
         st.write("column_two")
-        st.markdown(
-           "[test](https://github.com/ThomasHeinThura/Testing-automation-ETL-pipeline-and-CI-CD-with-docker)"
-        )
-        st.markdown(
-            "[](assests/repository-open-graph-template.png)"
-        )
-        st.image("assests/repository-open-graph-template.png")
+        # st.markdown(
+        #    "[test]()"
+        # )
+        # st.markdown(
+        #     "[](assests/repository-open-graph-template.png)"
+        # )
+        # st.image("assests/repository-open-graph-template.png")
         pass
 
     

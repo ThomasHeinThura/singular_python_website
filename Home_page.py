@@ -2,7 +2,8 @@ import streamlit as st
 
 st.set_page_config(
     page_title = "Multipage App",
-    page_icon = ":X"
+    page_icon = ":tada:",
+    layout = "wide"
 )
 
 st.title("Main Page")

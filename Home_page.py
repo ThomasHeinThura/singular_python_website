@@ -34,28 +34,19 @@ with st.container():
     st.write("---")
     st.subheader("The articles I write : ")
     st.write("##")
+    # st.markdown("[![Foo](https://github.com/ThomasHeinThura/singular_python_website/blob/main/assests/ci_cd.jpg?raw=true)](https://github.com/ThomasHeinThura/Testing-automation-ETL-pipeline-and-CI-CD-with-docker/)")
     
     st.write("The articles are :")
     column_one, column_two, column_three, column_four, column_five = st.columns(5)
     with column_one:
-        st.write("column_one")
-        # st.markdown(
-        #     "![Sonny and Mariel high fiving.](https://content.codecademy.com/courses/learn-cpp/community-challenge/highfive.gif) \
-        #     [![A mushroom-head robot](/assets/images/codey.jpg 'Codey the Codecademy mascot')](https://codecademy.com)"
-        
-        # )
-        st.markdown("[![Foo](https://github.com/ThomasHeinThura/singular_python_website/blob/main/assests/ci_cd.jpg?raw=true)](https://github.com/ThomasHeinThura/Testing-automation-ETL-pipeline-and-CI-CD-with-docker)")
-        pass
-    
+        st.markdown('[Personal website project](https://github.com/ThomasHeinThura/singular_python_website)')
+        st.image('assests/personal_website.jpg')
+  
+
     with column_two:
-        st.write("column_two")
-        # st.markdown(
-        #    "[test]()"
-        # )
-        # st.markdown(
-        #     "[](assests/repository-open-graph-template.png)"
-        # )
-        # st.image("assests/repository-open-graph-template.png")
+        st.markdown('[ETL pipeline and CI CD project](https://github.com/ThomasHeinThura/Testing-automation-ETL-pipeline-and-CI-CD-with-docker/)')
+        st.image('assests/ci_cd.jpg')
+        
         pass
 
     

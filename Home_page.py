@@ -7,4 +7,7 @@ st.set_page_config(
 )
 
 st.title("Main Page")
-st.sidebar.success("Select a page above.")
+st.sidebar.success("select the pages")
+
+# ----- HEADER SECTION ----- # 
+st.subheader("Hello there, I am Thomas Hein Thura :wave:")

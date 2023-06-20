@@ -14,13 +14,8 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-
-lottie_coding = load_lottieurl(
-    "https://assets5.lottiefiles.com/packages/lf20_0yfsb3a1.json"
-)
-lottie_article = load_lottieurl(
-    "https://assets5.lottiefiles.com/private_files/lf30_zSGy1w.json"
-)
+lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_0yfsb3a1.json")
+lottie_article = load_lottieurl("https://assets5.lottiefiles.com/private_files/lf30_zSGy1w.json")
 
 
 # ----- Intro SECTION ----- #
@@ -36,40 +31,38 @@ with st.container():
     with left_col:
         st.title("A Freelance Machine Learning Engineer from Myanmar.")
         st.write(
-            """
-            Google-certified TensorFlow developer with a strong background in the medical field.
-            Leveraging a broad knowledge of human physiology and pathology, 
-            I am excited to apply my expertise in machine learning and deep learning to develop 
-            innovative solutions that improve the quality of life.
+        """
+        Google-certified TensorFlow developer with a strong background in the medical field.
+        Leveraging a broad knowledge of human physiology and pathology, 
+        I am excited to apply my expertise in machine learning and deep learning to develop 
+        innovative solutions that improve the quality of life.
 
-            Email - thomas.h.thura@gmail.com
+        Email - thomas.h.thura@gmail.com
 
-            𝑺𝑲𝑰𝑳𝑳𝑺 
-            - Machine Learning Modeling (Scikit Learn), 
-            - Deep Learning Modeling (CNN, NLP, Time Series, LLM, Transformer) with TensorFlow and PyTorch, 
-            - Data Science, Statistical Analysis, Predictive Modeling,
-            - Data Engineering (NumPy, Pandas, MLFlow, Prefect, SQL, SQLite, MongoDB, Prometheus),
-            - Deployment (Docker, Kubernetes, AWS EC2, S3 bucket), 
-            - Monitoring (EvidentlyAI, Grafana), 
-            - Version Control and CI/CD (GitHub, Git), 
-            - Data Visualization (Matplotlib, Seaborn), 
-            - Python, Basic Concept of C++, Linux
+        𝑺𝑲𝑰𝑳𝑳𝑺 
+        - Machine Learning Modeling (Scikit Learn), 
+        - Deep Learning Modeling (CNN, NLP, Time Series, LLM, Transformer) with TensorFlow and PyTorch, 
+        - Data Science, Statistical Analysis, Predictive Modeling,
+        - Data Engineering (NumPy, Pandas, MLFlow, Prefect, SQL, SQLite, MongoDB, Prometheus),
+        - Deployment (Docker, Kubernetes, AWS EC2, S3 bucket), 
+        - Monitoring (EvidentlyAI, Grafana), 
+        - Version Control and CI/CD (GitHub, Git), 
+        - Data Visualization (Matplotlib, Seaborn), 
+        - Python, Basic Concept of C++, Linux
 
-            𝑺𝑶𝑭𝑻 𝑺𝑲𝑰𝑳𝑳𝑺 
-            - As a founder of a local charity group, have confidence in communication and 
-            organization skills, with a logical approach to problem-solving, time management, 
-            leadership, and task prioritization skills.
-            - Generalize real-time project issues and seek the best possible solutions.
-            """
+        𝑺𝑶𝑭𝑻 𝑺𝑲𝑰𝑳𝑳𝑺 
+        - As a founder of a local charity group, have confidence in communication and 
+        organization skills, with a logical approach to problem-solving, time management, 
+        leadership, and task prioritization skills.
+        - Generalize real-time project issues and seek the best possible solutions.
+        """
         )
 
 
 # ------ Article Section ----- #
 with st.container():
     st.write("---")
-    st.subheader(
-        "The articles I wrote [@Medium](https://medium.com/@thomas.heinthura) "
-    )
+    st.subheader("The articles I wrote [@Medium](https://medium.com/@thomas.heinthura)")
     st.write("##")
 
     column_one, column_two, column_three, column_four = st.columns(4)

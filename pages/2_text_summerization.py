@@ -19,23 +19,13 @@ submit = st.button("Submit")
 
 def evaluate(Text_to_summarize):
     result = model(Text_to_summarize)
-    del model
     return result[0]["summary_text"]
 
-model_cache = {}
-
-if 'model_output' in model_cache:
-    output = model_cache['model_output']
-else:
-    # Perform the computation using the model
-    # Replace this with your own code for model inference
+if submit:
     with st.spinner("Summarization the text..."):
         output = evaluate(text_input)  # final result from process
         # output = text_input.upper()
         st.text_area(label="Text Summarization Output", value=output, height=150)
-
-            # Store the output in the cache for future requests
-        model_cache['model_output'] = output
 
 
 # ----------------------------------------------------- #

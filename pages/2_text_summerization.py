@@ -15,9 +15,9 @@ model = pipeline("summarization", base_model)
 
 
 def evaluate(Text_to_summarize):
-    with st.spinner("Loading the model ......"):
-        result = model(Text_to_summarize)
-        return result[0]["summary_text"]
+    # with st.spinner("Loading the model ......"):
+    result = model(Text_to_summarize)
+    return result[0]["summary_text"]
 
 
 # ----------------------------------------------------- #

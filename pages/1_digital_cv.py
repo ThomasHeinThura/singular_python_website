@@ -1,19 +1,29 @@
 import streamlit as st 
 
+st.set_page_config(page_title="Digital CV", page_icon=":sunglass:")
 
-st.cache_data.clear()
-st.title("Digital CV")
-st.write("This project is under construction")
-st.write(
-    """
-    Thomas Hein Thura
-    Machine Learning Engineer     
-    Email: thomas.h.thura@gmail.com   
-    Location - Myanmar   
-    Phone: +959448000829   
-    ThomasHeinThura@LinkedIn | ThomasHeinThura@Kaggle 	ThomasHeinThura@GitHub | ThomasHeinThura@Medium
-    """
-)
+with st.container():
+    left_col, right_col = st.columns(2)
+    
+    with right_col:
+        st.image("https://avatars.githubusercontent.com/u/29223772?v=4")
+        
+    with left_col:
+        
+        st.title("Digital CV")
+        st.subheader("Thomas Hein Thura")
+        st.subheader("Machine Learning Engineer")
+        st.write(
+            """
+            Email: thomas.h.thura@gmail.com   
+            Location - Myanmar   
+            Phone: +959448000829   
+            [ThomasHeinThura@LinkedIn](https://www.linkedin.com/in/thomas-hein-thura/)  
+            [ThomasHeinThura@Kaggle](https://www.kaggle.com/heinthura)  
+            [ThomasHeinThura@GitHub](https://github.com/ThomasHeinThura?tab=repositories)  
+            [ThomasHeinThura@Medium](https://medium.com/@thomas.heinthura)  
+            """
+        )
 
 # ------ SUmmary Section ------ #
 with st.container():
@@ -104,12 +114,13 @@ with st.container():
 
 # ------ Education and Achievemnet ------ #
 with st.container():
+    st.write("---")
     st.subheader("Education and Achievement")
     st.write(
         """
-        **English** - Business Level proficiency, Myanmar - Native  
-        Education - Final year medical student University of Medicine 2, Yangon, MBBS ([projects, paper, presentation](https://www.linkedin.com/in/thomas-hein-thura/details/education/))  
-        Achievement - Google TensorFlow Developer Certificate ([Google TensorFlow developer certificate link](https://www.credential.net/17949d75-18f5-45be-83e9-61c95919cb38))  
-        CURRENT PROJECTS (Freelance + Personal) - Projects on UW-Madison GI Tract Image Segmentation, Brain tumour detection  
+        - **English** - Business Level proficiency, Myanmar - Native  
+        - **Education** - Final year medical student University of Medicine 2, Yangon, MBBS ([projects, paper, presentation](https://www.linkedin.com/in/thomas-hein-thura/details/education/))  
+        - **Achievement** - Google TensorFlow Developer Certificate ([Google TensorFlow developer certificate link](https://www.credential.net/17949d75-18f5-45be-83e9-61c95919cb38))  
+        - **CURRENT PROJECTS (Freelance + Personal)** - Projects on UW-Madison GI Tract Image Segmentation, Brain tumour detection  
         """
     )

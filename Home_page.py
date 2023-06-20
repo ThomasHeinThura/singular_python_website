@@ -135,7 +135,7 @@ with st.container():
     # with column_one:
         # --------- #
     st.markdown(
-        "[![Personal website project](https://github.com/ThomasHeinThura/singular_python_website/blob/main/assests/project/personal_website.jpg?raw=true)](https://github.com/ThomasHeinThura/singular_python_website)"
+        "[![Personal website project](https://github.com/ThomasHeinThura/singular_python_website/blob/main/assests/project/personal_website_480.jpg?raw=true)](https://github.com/ThomasHeinThura/singular_python_website)"
     )
     
     # st.markdown("[![Foo](https://github.com/ThomasHeinThura/singular_python_website/blob/main/assests/project/personal_website.jpg?raw=true)](https://github.com/ThomasHeinThura/singular_python_website/)")

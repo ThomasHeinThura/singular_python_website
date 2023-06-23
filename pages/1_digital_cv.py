@@ -1,6 +1,17 @@
 import streamlit as st 
 
 st.set_page_config(page_title="Digital CV", page_icon=":sunglasses:")
+st.markdown(
+    """
+<style>
+    # [data-testid="collapsedControl"] {display: none}
+    MainMenu {visibility : hidden;}
+    footer {visibility : hidden;}
+    header {visibility : hidden}
+</style>
+    """,unsafe_allow_html=True,
+)
+
 
 with st.container():
     left_col, right_col = st.columns(2)

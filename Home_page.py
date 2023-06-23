@@ -5,23 +5,26 @@ from streamlit_lottie import st_lottie
 from streamlit_option_menu import option_menu
 
 
-st.set_page_config(page_title="Multipage App", page_icon=":tada:", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="My Personal Website", page_icon="🌐", layout="wide")
 
-# st.markdown(
-#     """
-# <style>
-#     [data-testid="collapsedControl"] {display: none}
-# </style>
-#     """,unsafe_allow_html=True,
-# )
-
-selected = option_menu(
-    None,
-    options=["Home_page", "Digital CV", "Text Summerization", "Stable diffusion", "ETL pipeline"],
-    icons=['house', 'cloud-upload', "list-task", 'gear', 'gear'],
-    default_index=0, 
-    orientation="horizontal"
+st.markdown(
+    """
+<style>
+    # [data-testid="collapsedControl"] {display: none}
+    MainMenu {visibility : hidden;}
+    footer {visibility : hidden;}
+    header {visibility : hidden}
+</style>
+    """,unsafe_allow_html=True,
 )
+
+# selected = option_menu(
+#     None,
+#     options=["Home_page", "Digital CV", "Text Summerization", "Stable diffusion", "ETL pipeline"],
+#     icons=['house', 'cloud-upload', "list-task", 'gear', 'gear'],
+#     default_index=0, 
+#     orientation="horizontal"
+# )
 
 
 # ----- Loading assets ------#

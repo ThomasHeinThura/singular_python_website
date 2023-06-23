@@ -11,20 +11,21 @@ st.title("Text Summerization")
 
 # ----- The whole text summerization will be here ----- #
 base_model = "pszemraj/long-t5-tglobal-base-16384-book-summary" # This can change to other model
-model = pipeline("summarization", base_model)
+
+if 'model' not in st.session_state:
+    st.session_state['model'] = pipeline("summarization", base_model)
 
 # input and submit button
 text_input = st.text_area("Input text to summarization.", height=200)
 submit = st.button("Submit")
 
 def evaluate(Text_to_summarize):
-    result = model(Text_to_summarize)
+    result = st.session_state['model'](Text_to_summarize)
     return result[0]["summary_text"]
 
 if submit:
     with st.spinner("Summarization the text..."):
         output = evaluate(text_input)  # final result from process
-        # output = text_input.upper()
         st.text_area(label="Text Summarization Output", value=output, height=150)
 
 

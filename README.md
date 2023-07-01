@@ -1,4 +1,4 @@
-The project is for building a personal website .
+The project is for building a personal website.
 * ETL pipeline is still undergoing. 
 
 ![Screenshot_1](assests/screenshot/page_1.png)
@@ -22,7 +22,7 @@ The project is for building a personal website .
 
 ### Deployment 
 * The website is tested to deploy in zeet.co but I don't have any luck.
-* The AWS EC2 is using to deploy. 
+* The AWS EC2 is used to deploy. 
   * `Launch` the EC2 instance. And Make sure to open the `port:8501` in `network` config by clicking edit during making an instance. 
   * Then enter ssh or connect with EC2. 
   * install pip by downloading `curl -O https://bootstrap.pypa.io/get-pip.py` and install with `python3 get-pip.py --user`.

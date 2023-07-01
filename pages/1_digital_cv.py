@@ -14,13 +14,15 @@ st.markdown(
 )
 
 # ----- Path settings ----- #
-current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
-Asia_resume_file = current_dir / "assests" / "Thomas_Hein_Thura_CV_Asia_1_July_2023-F.pdf"
-US_resume_file = current_dir / "assests" / "Thomas_Hein_Thura_CV_EU_US_1_July_2023-F.pdf"
+Asia_resume_file = "assests/Thomas_Hein_Thura_CV_Asia_1_July_2023-F.pdf"
+US_resume_file = "assests/Thomas_Hein_Thura_CV_EU_US_1_July_2023-F.pdf"
 
 # ------ Load pdf file ------ #
 with open(Asia_resume_file, "rb") as pdf_file_asia:
     PDFbyte_Asia = pdf_file_asia.read()
+
+with open(US_resume_file, "rb") as pdf_file_us:
+    PDFbyte_us = pdf_file_us.read()
 
 with st.container():
     left_col, right_col = st.columns(2)
@@ -84,8 +86,12 @@ with st.container():
             mime = "application/octet-stream"
             )
             
-        if st.download_button("Downlaod for US EU CV"):
-            st.write("Download US EU CV")
+        st.download_button(
+            label = "Download for US EU CV form",
+            data = PDFbyte_us,
+            file_name = US_resume_file,
+            mime = "application/octet-stream"
+            )
         
 
 # ------ SUmmary Section ------ #

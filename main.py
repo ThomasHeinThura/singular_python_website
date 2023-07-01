@@ -20,7 +20,7 @@ st.markdown(
 
 selected = option_menu(
     None,
-    options=["Home_page", "Articles", "Github Projects", "University and Charity"],
+    options=["Home", "Articles", "Github", "Edu"],
     icons=['house', 'book-half', "github", 'mortarboard'],
     default_index=0, 
     orientation="horizontal"
@@ -39,7 +39,7 @@ lottie_article = load_lottieurl("https://assets5.lottiefiles.com/private_files/l
 
 
 # ----- Intro SECTION ----- #
-if selected == "Home_page":
+if selected == "Home":
     with st.container():
         left_col, right_col = st.columns(2)
         
@@ -124,7 +124,7 @@ if selected == "Articles":
 
 
 # ----- Projects Section ----- #
-if selected == "Github Projects":
+if selected == "Github":
     with st.container():
         st.write("---")
         st.subheader(
@@ -199,7 +199,7 @@ if selected == "Github Projects":
 
 
 # ----- Education Section ----- #
-if selected == "University and Charity":
+if selected == "Edu":
     with st.container():
         st.write("---")
         st.subheader("The projects I involved during University.")

@@ -68,6 +68,8 @@ with st.container():
         Phone: +959448000829   
         """
         )
+        if st.button("Download CV form"):
+            st.write("download the cv")
 
 # ------ SUmmary Section ------ #
 with st.container():

@@ -102,10 +102,10 @@ with st.container():
             )
         
 
-"""
-The following section doesn't have heavy techniques.
-You simply add your notes, summary in st.write
-"""
+
+# The following section doesn't have heavy techniques.
+# You simply add your notes, summary in st.write
+
 
 # ------ Summary Section ------ #
 with st.container():

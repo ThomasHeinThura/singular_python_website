@@ -52,14 +52,14 @@ if selected == "Home":
             st.image("https://avatars.githubusercontent.com/u/29223772?v=4")
             st.markdown("#### Hello there, I am Thomas Hein Thura :wave:")
             
-            """
-            link icon 
-            I took five cols even though it need only four. 
-            The last fifth col is just take space to look nice in UI
-            The code and link are hard coded. you can add your link in 
-            - url link
-            - photo link
-            """
+
+            # link icon 
+            # I took five cols even though it need only four. 
+            # The last fifth col is just take space to look nice in UI
+            # The code and link are hard coded. you can add your link in 
+            # - url link
+            # - photo link
+
             one, two, three, four,five = st.columns([1,1,1,1,7.5])    
             
             with one: 
@@ -131,6 +131,12 @@ if selected == "Home":
             )
 
 
+    # To get clickable photo with caption, This section is hard coded. 
+    # You can your link in this pattern
+    # - link
+    # - img
+    # - label or title or caption
+
 # ------ Article Section ----- #
 if selected == "Articles":
     with st.container():
@@ -138,13 +144,6 @@ if selected == "Articles":
         st.subheader("The articles I wrote [@Medium](https://medium.com/@thomas.heinthura)")
         st.write("##")
 
-        """
-        To get clickable photo with caption, This section is hard coded. 
-        You can your link in this pattern
-        - link
-        - img
-        - label or title or caption
-        """
         column_one, column_two, column_three, column_four = st.columns(4)
         with column_one:
             st.write( # article 1

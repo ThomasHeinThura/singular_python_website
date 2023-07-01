@@ -1,6 +1,10 @@
 The project is for building a personal website .
 * ETL pipeline is still undergoing. 
 
+![Screenshot_1](assests/screenshot/page_1.png)
+![Screenshot_2](assests/screenshot/page_2.png)
+![Screenshot_3](assests/screenshot/page_3.png)
+
 #### The original plan is to make the website with Fusion 5 projects
 1. Personal Data and projects and article
 2. Digital CV 

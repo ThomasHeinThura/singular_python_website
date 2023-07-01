@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 import requests
 
 
-st.set_page_config(page_title="My Personal Website", page_icon="🌐", layout="wide")
+st.set_page_config(page_title="Thomas Hein Thura", page_icon=":sun_with_face:", layout="wide")
 
 st.markdown(
     """

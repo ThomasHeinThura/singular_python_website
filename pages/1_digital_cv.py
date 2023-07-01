@@ -1,7 +1,12 @@
 import streamlit as st 
 from pathlib import Path
 
-st.set_page_config(page_title="Digital CV", page_icon=":sunglasses:")
+# page setup
+st.set_page_config(page_title="Digital CV", 
+                   page_icon=":sunglasses:")
+
+
+# Remove header and footer
 st.markdown(
     """
 <style>
@@ -24,13 +29,15 @@ with open(Asia_resume_file, "rb") as pdf_file_asia:
 with open(US_resume_file, "rb") as pdf_file_us:
     PDFbyte_us = pdf_file_us.read()
 
+
+# UI Start
 with st.container():
     left_col, right_col = st.columns(2)
     
-    with right_col:
+    with right_col: # Image of own photo, you can add your photo link
         st.image("https://avatars.githubusercontent.com/u/29223772?v=4")
         
-        one, two, three, four = st.columns([1,1,1,1])    
+        one, two, three, four = st.columns([1,1,1,1])    # This is same pattern as clickable photo and button in home page
         with one: 
             st.write(
             """
@@ -79,6 +86,7 @@ with st.container():
         Phone: +959448000829   
         """
         )
+        # CV pdf download button
         st.download_button(
             label = "Download for Asia CV form with photo",
             data = PDFbyte_Asia,
@@ -94,7 +102,12 @@ with st.container():
             )
         
 
-# ------ SUmmary Section ------ #
+"""
+The following section doesn't have heavy techniques.
+You simply add your notes, summary in st.write
+"""
+
+# ------ Summary Section ------ #
 with st.container():
     st.write("---")
     st.subheader("Summary")

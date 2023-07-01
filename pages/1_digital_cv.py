@@ -68,8 +68,12 @@ with st.container():
         Phone: +959448000829   
         """
         )
-        if st.button("Download CV form"):
-            st.write("download the cv")
+        if st.button("Download for Asia CV form with photo"):
+            st.write("download Asia cv")
+            
+        if st.button("Downlaod for US EU CV"):
+            st.write("Download US EU CV")
+        
 
 # ------ SUmmary Section ------ #
 with st.container():

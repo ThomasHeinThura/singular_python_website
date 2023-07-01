@@ -1,5 +1,5 @@
 # Home page
-import requests
+# import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_option_menu import option_menu
@@ -28,14 +28,14 @@ st.markdown(
 
 
 # ----- Loading assets ------#
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+# def load_lottieurl(url):
+#     r = requests.get(url)
+#     if r.status_code != 200:
+#         return None
+#     return r.json()
 
-lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_0yfsb3a1.json")
-lottie_article = load_lottieurl("https://assets5.lottiefiles.com/private_files/lf30_zSGy1w.json")
+# lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_0yfsb3a1.json")
+# lottie_article = load_lottieurl("https://assets5.lottiefiles.com/private_files/lf30_zSGy1w.json")
 
 
 # ----- Intro SECTION ----- #
@@ -117,8 +117,8 @@ with st.container():
         </a>
         """,unsafe_allow_html=True)
 
-    with column_four:
-        st.lottie(lottie_article, key='article')
+    # with column_four:
+    #     st.lottie(lottie_article, key='article')
 
 
 # ----- Projects Section ----- #

@@ -21,7 +21,7 @@ st.markdown(
 selected = option_menu(
     None,
     options=["Home_page", "Articles", "Github Projects", "University and Charity"],
-    icons=['house', 'cloud-upload', "GitHub", 'book'],
+    icons=['house', 'book-half', "github", 'mortarboard'],
     default_index=0, 
     orientation="horizontal"
 )

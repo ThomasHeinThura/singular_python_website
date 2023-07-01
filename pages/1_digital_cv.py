@@ -19,6 +19,43 @@ with st.container():
     with right_col:
         st.image("https://avatars.githubusercontent.com/u/29223772?v=4")
         
+        one, two, three, four = st.columns([1,1,1,1])    
+        with one: 
+            st.write(
+            """
+            <a href = "https://github.com/ThomasHeinThura" >
+            <img src = "https://i.pinimg.com/736x/b5/1b/78/b51b78ecc9e5711274931774e433b5e6.jpg" 
+            width="50%" height="50%">
+            </a>
+            """,unsafe_allow_html=True)
+                
+        with two:
+            st.write(
+            """
+            <a href = "https://www.linkedin.com/in/thomas-hein-thura/" >
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"
+            width="50%" height="50%">
+            </a>
+            """,unsafe_allow_html=True)
+        
+        with three:
+            st.write(
+            """
+            <a href = "https://www.kaggle.com/heinthura" >
+            <img src = "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-512.png"
+            width="50%" height="50%">
+            </a>
+            """,unsafe_allow_html=True)
+        
+        with four:
+            st.write(
+            """
+            <a href = "https://medium.com/@thomas.heinthura" >
+            <img src = "https://seeklogo.com/images/M/medium-2020-new-icon-logo-454E46D050-seeklogo.com.png"
+            width="50%" height="50%">
+            </a>
+            """,unsafe_allow_html=True)
+        
     with left_col:
         
         st.title("Digital CV")
@@ -29,10 +66,6 @@ with st.container():
         Email: thomas.h.thura@gmail.com   
         Location - Myanmar   
         Phone: +959448000829   
-        [ThomasHeinThura@LinkedIn](https://www.linkedin.com/in/thomas-hein-thura/)  
-        [ThomasHeinThura@Kaggle](https://www.kaggle.com/heinthura)  
-        [ThomasHeinThura@GitHub](https://github.com/ThomasHeinThura?tab=repositories)  
-        [ThomasHeinThura@Medium](https://medium.com/@thomas.heinthura)  
         """
         )
 

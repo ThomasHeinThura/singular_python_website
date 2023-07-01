@@ -5,6 +5,7 @@ from streamlit_option_menu import option_menu
 import requests
 
 
+
 st.set_page_config(page_title="Thomas Hein Thura", page_icon=":sun_with_face:", layout="wide")
 
 st.markdown(
@@ -26,6 +27,27 @@ selected = option_menu(
     orientation="horizontal"
 )
 
+    
+# --- button ---- #    
+def get_st_button_a_tag(url_link, button_name):
+    """
+    generate html a tag
+    :param url_link:
+    :param button_name:
+    :return:
+    """
+    return f'''
+    <a href={url_link}><button style="
+    fontWeight: 400;
+    padding: 0.25rem 0.75rem;
+    borderRadius: 0.25rem;
+    margin: 0px;
+    lineHeight: 1.6;
+    width: auto;
+    userSelect: none;
+    backgroundColor: #FFFFFF;
+    border: 1px solid rgba(49, 51, 63, 0.2);">{button_name}</button></a>
+    '''
 
 # ----- Loading assets ------#
 def load_lottieurl(url):
@@ -43,11 +65,50 @@ if selected == "Home":
     with st.container():
         left_col, right_col = st.columns(2)
         
-        with right_col:
+        with right_col: # photo
             st.image("https://avatars.githubusercontent.com/u/29223772?v=4")
             st.markdown("#### Hello there, I am Thomas Hein Thura :wave:")
             
-            github_button = st.button(label=":sunglasses:")
+            # I want to do link icon
+            one, two, three, four,five = st.columns([1,1,1,1,7.5])    
+            
+            with one: 
+                st.write(
+                """
+                <a href = "https://github.com/ThomasHeinThura" >
+                <img src = "https://i.pinimg.com/736x/b5/1b/78/b51b78ecc9e5711274931774e433b5e6.jpg" 
+                width="50%" height="50%">
+                </a>
+                """,unsafe_allow_html=True)
+                    
+            with two:
+                st.write(
+                """
+                <a href = "https://www.linkedin.com/in/thomas-hein-thura/" >
+                <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"
+                width="50%" height="50%">
+                </a>
+                """,unsafe_allow_html=True)
+            
+            with three:
+                st.write(
+                """
+                <a href = "https://www.kaggle.com/heinthura" >
+                <img src = "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-512.png"
+                width="50%" height="50%">
+                </a>
+                """,unsafe_allow_html=True)
+            
+            with four:
+                st.write(
+                """
+                <a href = "https://medium.com/@thomas.heinthura" >
+                <img src = "https://seeklogo.com/images/M/medium-2020-new-icon-logo-454E46D050-seeklogo.com.png"
+                width="50%" height="50%">
+                </a>
+                """,unsafe_allow_html=True)
+                
+                
             
         with left_col:
             st.title("A Freelance Machine Learning Engineer from Myanmar.")

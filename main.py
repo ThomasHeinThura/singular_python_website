@@ -207,7 +207,7 @@ with st.container():
         st.write(
         """
         <a href = "https://www.linkedin.com/in/thomas-hein-thura/details/education/862177966/multiple-media-viewer/?profileId=ACoAAEBuTxMBogrV1SoierwuRXR3J9bNBmnpwnY&treasuryMediaId=1635518689240" >
-        <img src = "https://media.licdn.com/dms/image/C562DAQF_KVeJoJ9_VA/profile-treasury-document-cover-images_480/0/1677852197447?e=1687852800&v=beta&t=QtK3bsTGXx0b8Orgvhfo4VfyaCVHwIFWB64RFNMYBik" 
+        <img src = "https://github.com/ThomasHeinThura/singular_python_website/blob/main/assests/article/final_part_one_paper.jpg?raw=true" 
         width="100%" height="50%">
         <p align= center > Research survery paper </p>
         </a>
@@ -218,7 +218,7 @@ with st.container():
         st.write(
         """
         <a href = "https://www.linkedin.com/in/thomas-hein-thura/details/education/862177966/multiple-media-viewer/?profileId=ACoAAEBuTxMBogrV1SoierwuRXR3J9bNBmnpwnY&treasuryMediaId=1635518685908&type=DOCUMENT" >
-        <img src = "https://media.licdn.com/dms/image/C562DAQGHk_6h2EhMjg/profile-treasury-document-cover-images_480/0/1677851950965?e=1687852800&v=beta&t=vYI54F7grdhcDTvc6xpkGiSyxw-Prv5F2yJBI_iDlbw" 
+        <img src = "https://github.com/ThomasHeinThura/singular_python_website/blob/main/assests/article/third_year_presentation.jpg?raw=true" 
         width="100%" height="50%">
         <p align= center > Presentation : Research on Risk factors of acute coronary syndrome patients </p>
         </a>
@@ -230,7 +230,7 @@ with st.container():
         st.write(
         """
         <a href = "https://www.linkedin.com/in/thomas-hein-thura/details/education/862177966/multiple-media-viewer/?profileId=ACoAAEBuTxMBogrV1SoierwuRXR3J9bNBmnpwnY&treasuryMediaId=1635518690048&type=DOCUMENT" >
-        <img src = "https://media.licdn.com/dms/image/C562DAQEOtuUwuh0V8A/profile-treasury-document-cover-images_480/0/1677852027257?e=1687852800&v=beta&t=EP04opKhkm5KKJoK6l2d2c95rplQwZ2g18hQlqSdNNM" 
+        <img src = "https://github.com/ThomasHeinThura/singular_python_website/blob/main/assests/article/third_year_poster.jpg?raw=true" 
         width="100%" height="50%">
         <p align= center > Poster : Research on Risk factors of acute coronary syndrome patients </p>
 
@@ -241,7 +241,7 @@ with st.container():
         st.write(
         """
         <a href = "https://www.linkedin.com/in/thomas-hein-thura/details/education/862177966/multiple-media-viewer/?profileId=ACoAAEBuTxMBogrV1SoierwuRXR3J9bNBmnpwnY&treasuryMediaId=1635518688326&type=DOCUMENT" >
-        <img src = "https://media.licdn.com/dms/image/C562DAQGpaHu6M5Sz0g/profile-treasury-document-cover-images_480/0/1677851757852?e=1687852800&v=beta&t=kKoixC_0-ezCgARg8izN2gLx93KJVeVHTHRi3of7shs" 
+        <img src = "https://github.com/ThomasHeinThura/singular_python_website/blob/main/assests/article/second_year_2.jpg?raw=true" 
         width="100%" height="50%">
         <p align= center > Presentation : Research of Effects of Mental Stress on Cardiovascular System </p>
         </a>
@@ -271,7 +271,7 @@ with st.container():
         st.write(
         """
         <a href = "https://www.linkedin.com/in/thomas-hein-thura/details/featured/1635518484926/single-media-viewer/?profileId=ACoAAEBuTxMBogrV1SoierwuRXR3J9bNBmnpwnY" >
-        <img src = "https://media.licdn.com/dms/image/C562DAQEJpIQc2X7b7A/profile-treasury-document-cover-images_480/0/1677852890281?e=1687852800&v=beta&t=CehIgCbYe_59YeD7FNafvzjohXA8CwGpOcLPHOsbOcw" 
+        <img src = "https://github.com/ThomasHeinThura/singular_python_website/blob/main/assests/article/dream_charity_presentation.jpg?raw=true" 
         width="100%" height="50%">
         <p align= center > Dream Charity Presentation Slide </p>
         </a>

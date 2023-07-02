@@ -35,7 +35,7 @@ with st.container():
     left_col, right_col = st.columns(2)
     
     with right_col: # Image of own photo, you can add your photo link
-        st.image("https://avatars.githubusercontent.com/u/29223772?v=4")
+        st.image("assests/screenshot/profile-pic_1.png")
         
         one, two, three, four = st.columns([1,1,1,1])    # This is same pattern as clickable photo and button in home page
         with one: 

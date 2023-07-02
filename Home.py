@@ -49,7 +49,7 @@ if selected == "Home":
         left_col, right_col = st.columns(2)
         
         with right_col: # photo
-            st.image("https://avatars.githubusercontent.com/u/29223772?v=4")
+            st.image("assests/screenshot/profile-pic_1.png")
             st.markdown("#### Hello there, I am Thomas Hein Thura :wave:")
             
 
